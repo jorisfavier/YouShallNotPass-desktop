@@ -1,0 +1,26 @@
+{
+  "name": "YouShallNotPass",
+  "version": "1.0.0",
+  "description": "Your connection between the YSNP app your computer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "node createApp.js"
+  },
+  "keywords": [
+    "YouShallNotPass",
+    "Password manager",
+    "Password"
+  ],
+  "author": "jorisfavier",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.0.5",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "ip": "^1.1.5",
+    "qrcode": "^1.4.4",
+    "uuid": "^8.3.2"
+  }
+}
