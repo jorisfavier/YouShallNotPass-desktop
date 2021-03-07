@@ -31,7 +31,7 @@ app.whenReady().then(() => {
 })
 
 app.on('window-all-closed', function () {
-  app.dock.hide()
+  if(process.platform == 'darwin') app.dock.hide()
 })
 
 function createWindow () {
@@ -48,7 +48,7 @@ function createWindow () {
   })
 
   mainWindow.loadFile('index.html')
-  app.dock.show()
+  if(process.platform == 'darwin') app.dock.show()
 }
 
 function loadServer() {
